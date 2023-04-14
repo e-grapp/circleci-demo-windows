@@ -11,6 +11,9 @@ jobs:
   Test Checkout:
     executor: windows
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "90:c4:0d:06:71:40:2b:00:67:d9:81:d2:48:45:34:53"
       - run:
           name: Checkout
           command: |
